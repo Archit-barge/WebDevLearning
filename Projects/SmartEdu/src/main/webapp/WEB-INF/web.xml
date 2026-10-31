@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+	<display-name>SmartEdu</display-name>
+    <context-param>
+        <param-name>UPLOAD_BASE_PATH</param-name>
+        <param-value>D:/eduverse_uploads</param-value>
+    </context-param>
+
+    <!-- ===== AWS S3 CONFIG ===== -->
+    <!-- Credentials come automatically from the EC2 IAM role (SmartEduS3Role) -->
+    <!-- No access keys needed here -->
+    <context-param>
+        <param-name>AWS_S3_BUCKET</param-name>
+        <param-value>smarteduhub-files</param-value>
+    </context-param>
+    <context-param>
+        <param-name>AWS_S3_REGION</param-name>
+        <param-value>eu-north-1</param-value>
+    </context-param>
+
+</web-app>

@@ -1,0 +1,17 @@
+# Build output
+/build/
+/target/
+/out/
+
+# IDE/editor files
+/.vscode/
+/.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Packaged/dependency binaries
+/src/main/webapp/WEB-INF/lib/
+*.jar
